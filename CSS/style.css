@@ -23,7 +23,6 @@
     background-color: #fff;
 }
 
-.carousel-caption {
-    top: 40%;
-    transform: translateY(-10%);
+.navbar-defualt .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #3a7ab3;
 }
