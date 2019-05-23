@@ -26,3 +26,24 @@
 .navbar-defualt .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
     background-color: #3a7ab3;
 }
+
+.logo {
+    color: #3a7ab3;
+    font-size: 50px;
+}
+
+#kontakt {
+    color: white !important;
+    background-color: #3a7ab3 !important;
+}
+
+#kontakt .row .col-sm-7 .row .col-sm-12 .btn {
+    color: black !important;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}

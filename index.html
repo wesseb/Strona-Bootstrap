@@ -15,9 +15,12 @@
 
         <!-- Załadowanie JS Bootstrapa -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <!-- Płynne scrollowanie strony -->
+        <script src="JS/Scrollowanie.js"></script>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
         <!-- Menu nawigacji -->
         <nav class="navbar navbar-default navbar-fixed-top">
            <div class="container-fluid">
@@ -41,8 +44,8 @@
                                <li><a href="#">Bransolety</a></li>
                            </ul>
                        </li>
-                       <li><a href="#">O nas</a></li>
-                       <li><a href="#">Kontakt</a></li>
+                       <li><a href="#onas">O nas</a></li>
+                       <li><a href="#kontakt">Kontakt</a></li>
                    </ul>
                    <ul class="nav navbar-nav navbar-right">
                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Zaloguj się</a></li>
@@ -67,6 +70,10 @@
                     <div class="carousel-caption">
                         <h1>Kolekcja Żelipapą</h1>
                         <p>Oryginalna francuska kolekcja koleczyków prosto od sławnego twórcy Żelipapą</p>
+                        <br/>
+                        <button type="button" class="btn btn-primary active">Zobacz więcej</button>
+                        <br/>
+                        <br/>
                     </div>
                 </div>
 
@@ -75,6 +82,10 @@
                     <div class="carousel-caption">
                         <h1>Bransoletki Hdolfa</h1>
                         <p>Najlepszej klasy bransoletki zdobione włóknem węglowym</p>
+                        <br/>
+                        <button type="button" class="btn btn-primary active">Zobacz więcej</button>
+                        <br/>
+                        <br/>
                     </div>
                 </div>
 
@@ -83,9 +94,73 @@
                     <div class="carousel-caption">
                         <h1>Srebrne naszyjniki</h1>
                         <p>Uwielbiane przez wszystkie kobiety</p>
+                        <br/>
+                        <button type="button" class="btn btn-primary active">Zobacz więcej</button>
+                        <br/>
+                        <br/>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- O Nas -->
+        <div id="onas" class="container-fluid text-center">
+            <h2>O NAS</h2>
+            <p>Co nasza firma oferuje</p>
+            <br/>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-heart logo"></span>
+                    <h4>PASJA</h4>
+                    <p>Tworzymy naszą biżuterię z pasją</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-leaf logo"></span>
+                    <h4>EKO</h4>
+                    <p>Nasze biżuterie są prawie ekologiczne! (Tworzone z metali szlachetnych)</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate logo"></span>
+                    <h4>CERTYFIKOWANE</h4>
+                    <p>Nasze biżuterie są certyfikowane przez pełnoprawny program N.A.S.A.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div id="kontakt" class="container-fluid">
+            <h2 class="text-center">KONTAKT</h2>
+            <br/>
+            <div class="row">
+                <div class="col-sm-5">
+                    <p>Skontaktuj się z Nami a odpowiemy Ci w przeciągu 24h od czasu wysłania wiadomości!</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Chojnice, POL</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +48 123-321-423</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> wesseb95@gmail.com</p>
+                </div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Imię i nazwisko" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Adres e-mailowy" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Komentarz" rows="5"></textarea><br/>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Wyślij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+
+            <!-- Mapa Google'a -->
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+            <script src="JS/Mapa.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=KLUCZ&callback=mapa"></script>
         </div>
     </body>
 </html>
