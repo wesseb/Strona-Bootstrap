@@ -47,3 +47,27 @@
         margin: 25px 0;
     }
 }
+
+hr {
+    display: block; height: 1px; border: 0; border-top: 1px solid #3a7ab3;
+}
+
+.panel {
+    border: 1px solid #3a7ab3;
+    border-radius: 0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 1px 0px 10px rgba(0,0,0,.2)
+}
+
+.panel-heading, .panel-footer {
+    color: #fff !important;
+    background-color: #3a7ab3 !important;
+}
+
+.panel-footer .btn {
+    background-color: #fff !important;
+    color: #3a7ab3 !important;
+}

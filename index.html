@@ -8,7 +8,7 @@
 
         <!-- Załadowanie CSS Bootstrapa -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="/CSS/style.css">
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -17,10 +17,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
         <!-- Płynne scrollowanie strony -->
-        <script src="JS/Scrollowanie.js"></script>
+        <script src="/JS/Scrollowanie.js"></script>
     </head>
 
-    <body>
+    <body id="strona">
         <!-- Menu nawigacji -->
         <nav class="navbar navbar-default navbar-fixed-top">
            <div class="container-fluid">
@@ -35,11 +35,11 @@
                 </div>
                <div class="collapse navbar-collapse" id="bs-collapse1">
                    <ul class="nav navbar-nav">
-                       <li><a href="#main">Strona główna</a></li>
+                       <li><a href="/index.html">Strona główna</a></li>
                        <li class="dropdown">
                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Oferta <span class="caret"></span></a>
                            <ul class="dropdown-menu">
-                               <li><a href="#">Kolczyki</a></li>
+                               <li><a href="/CMS/kolczyki.html">Kolczyki</a></li>
                                <li><a href="#">Naszyjniki</a></li>
                                <li><a href="#">Bransolety</a></li>
                            </ul>
@@ -66,7 +66,7 @@
 
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="IMG/1.jpg"  alt="kolczyki">
+                    <img src="/IMG/1.jpg"  alt="kolczyki">
                     <div class="carousel-caption">
                         <h1>Kolekcja Żelipapą</h1>
                         <p>Oryginalna francuska kolekcja koleczyków prosto od sławnego twórcy Żelipapą</p>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="IMG/2.jpg" alt="bransoletki">
+                    <img src="/IMG/2.jpg" alt="bransoletki">
                     <div class="carousel-caption">
                         <h1>Bransoletki Hdolfa</h1>
                         <p>Najlepszej klasy bransoletki zdobione włóknem węglowym</p>
@@ -90,7 +90,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="IMG/3.jpg" alt="naszyjniki">
+                    <img src="/IMG/3.jpg" alt="naszyjniki">
                     <div class="carousel-caption">
                         <h1>Srebrne naszyjniki</h1>
                         <p>Uwielbiane przez wszystkie kobiety</p>
@@ -126,6 +126,7 @@
                 </div>
             </div>
         </div>
+        <br/>
 
         <!-- Kontakt -->
         <div id="kontakt" class="container-fluid">
@@ -161,6 +162,16 @@
             <div id="googleMap" style="width:100%;height:400px;"></div>
             <script src="JS/Mapa.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=KLUCZ&callback=mapa"></script>
+            <br/>
+        </div>
+        <br/>
+
+        <div class="container-fluid text-center">
+            <a href="#strona" title="Na górę">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Strona stworzona przez Sebastiana Wesołowskiego.</p>
+            <p>Powered in Bootstrap!</p>
         </div>
     </body>
 </html>
